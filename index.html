@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,23 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
     <div class="side-nav-menu min-vh-100 position-fixed d-flex">
         <div class="nav-tap d-flex flex-column justify-content-between p-4 min-vh-100">
             <div class="nav-links">
                 <ul class="list-unstyled overflow-hidden">
-                    <li class="py-2 position-relative"> Now playing </li>
-                    <li class="py-2 position-relative"> Popular </li>
-                    <li class="py-2 position-relative"> Top Rated </li>
-                    <li class="py-2 position-relative"> Trending </li>
-                    <li class="py-2 position-relative"> Upcoming </li>
-                    <!-- <li class="py-2 position-relative"> Contact Us </li> -->
+                    <li id="nowPlaying" class="py-2 position-relative"><a href="#">Now playing</a></li>
+                    <li id="popular" class="py-2 position-relative"><a href="#">Popular</a></li>
+                    <li id="topRated" class="py-2 position-relative"><a href="#">Top Rated</a></li>
+                    <li id="trending" class="py-2 position-relative"><a href="#">Trending</a></li>
+                    <li id="upcoming" class="py-2 position-relative"><a href="#">Upcoming</a></li>
+                    <li id="popular" class="py-2 position-relative">
+                        <a href="#contact">Contact Us</a>
+                    </li>
                 </ul>
+
             </div>
             <div class="nav-footer">
                 <div class="footer-icons">
@@ -30,7 +35,7 @@
                     <i class="fa-solid fa-globe"></i>
                 </div>
                 <div class="footer-copy">
-                    <p> Copyright © 2022 All Rights <br> Reserved.  <br> Created by <span> Alaa Ahmed</span></p>
+                    <p> Copyright © 2022 All Rights <br> Reserved. <br> Created by <span> Alaa Ahmed</span></p>
                 </div>
             </div>
         </div>
@@ -39,7 +44,7 @@
             <img class="logo" src="./img/logo.png">
             <i class="fa-solid fa-align-justify fa-2x open-close-icon"></i>
             <!-- <i class="fa-solid fa-x"></i> -->
-            
+
             <div>
                 <i class="fa-solid fa-globe d-block"></i>
                 <i class="fa-solid fa-share-nodes"></i>
@@ -51,10 +56,19 @@
     <div class="container">
         <div class="row m-auto py-5">
             <div class="col-md-12">
-                <input class="form-control bg-transparent w-50 mx-auto rounded-pill text-white shadow-none border-white px-3" type="text" placeholder="search ..">
+                <input id="inputSearch" type="text"
+                    class=" form-control bg-transparent w-50 mx-auto rounded-pill text-white shadow-none border-white px-3"
+                    placeholder="Search movies..." />
+
+                <!-- <input id="currentSearch" type="text"
+                    class="form-control bg-transparent w-50 mx-auto rounded-pill text-white shadow-none border-white px-3"
+                    placeholder="search displayed movies." /> -->
+
+                    </div>
+
+                    </div>
             </div>
-        </div>
-    </div>
+   
 
     <div class="container">
         <div class="row py-5 g-4" id="rowData">
@@ -102,160 +116,60 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="movie-item position-relative overflow-hidden">
-                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
-                    <div class="movie-overlay position-absolute">
-                        <h1 class="movie-title"> Meg 2: The Trench </h1>
-                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
-                            of a daring research team spirals into chaos when a malevolent
-                            mining operation threatens their mission and forces them into
-                            a high-stakes battle for survival. </p>
-                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
-                        <h3 class="">
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
-                        </h3>
-                        <h3 class="number"> 7.0</h3>    
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="movie-item position-relative overflow-hidden">
-                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
-                    <div class="movie-overlay position-absolute">
-                        <h1 class="movie-title"> Meg 2: The Trench </h1>
-                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
-                            of a daring research team spirals into chaos when a malevolent
-                            mining operation threatens their mission and forces them into
-                            a high-stakes battle for survival. </p>
-                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
-                        <h3 class="">
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
-                        </h3>
-                        <h3 class="number"> 7.0</h3>    
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="movie-item position-relative overflow-hidden">
-                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
-                    <div class="movie-overlay position-absolute">
-                        <h1 class="movie-title"> Meg 2: The Trench </h1>
-                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
-                            of a daring research team spirals into chaos when a malevolent
-                            mining operation threatens their mission and forces them into
-                            a high-stakes battle for survival. </p>
-                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
-                        <h3 class="">
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
-                        </h3>
-                        <h3 class="number"> 7.0</h3>    
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="movie-item position-relative overflow-hidden">
-                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
-                    <div class="movie-overlay position-absolute">
-                        <h1 class="movie-title"> Meg 2: The Trench </h1>
-                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
-                            of a daring research team spirals into chaos when a malevolent
-                            mining operation threatens their mission and forces them into
-                            a high-stakes battle for survival. </p>
-                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
-                        <h3 class="">
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
-                        </h3>
-                        <h3 class="number"> 7.0</h3>    
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="movie-item position-relative overflow-hidden">
-                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
-                    <div class="movie-overlay position-absolute">
-                        <h1 class="movie-title"> Meg 2: The Trench </h1>
-                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
-                            of a daring research team spirals into chaos when a malevolent
-                            mining operation threatens their mission and forces them into
-                            a high-stakes battle for survival. </p>
-                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
-                        <h3 class="">
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-solid fa-star text-warning fs-6"></i>
-                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
-                        </h3>
-                        <h3 class="number"> 7.0</h3>    
-
-                    </div>
+            
                 </div>
             </div> -->
         </div>
     </div>
 
 
-    <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+    <div class="contact min-vh-100 d-flex justify-content-center align-items-center" id="contact">
         <div class="container w-75 text-center">
-          <h1>Contact Us</h1>
-          <div class="row g-4 mt-3">
-            <div class="col-md-6">
-              <input type="text" class="form-control required" placeholder="Enter Your Name">
-              <p class="text-danger d-none" id="userNameAlert">Include at least 3 letters</p>
+            <h1>Contact Us</h1>
+            <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" id="userNameInput" placeholder="Enter Your Name">
+                    <p class="text-danger d-none" id="userNameAlert">Include at least 3 letters</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" id="userEmailInput" placeholder="Enter Your Email">
+                    <p class="text-danger d-none" id="userEmailAlert">Invalid Email, try example@domain.com</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" id="userPhoneInput" placeholder="Enter Your Phone">
+                    <p class="text-danger d-none" id="userPhoneAlert">Invalid Phone Number</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" id="userAgeInput" placeholder="Enter Your Age">
+                    <p class="text-danger d-none" id="userAgeAlert">Your age must be over 16+</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control required" id="userPasswordInput"
+                        placeholder="Enter Your Password">
+                    <p class="text-danger d-none" id="userPasswordAlert">Password must contain numbers & letters and be
+                        at least 8 characters</p>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control required" id="userRePasswordInput"
+                        placeholder="Re-enter Password">
+                    <p class="text-danger d-none" id="userRePasswordAlert">Passwords do not match</p>
+                </div>
             </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control required" placeholder="Enter Your Email">
-              <p class="text-danger d-none" id="userEmailAlert">Invalid Email, try example@domain.com</p>
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control required" placeholder="Enter Your Phone">
-              <p class="text-danger d-none" id="userPhoneAlert">Invalid Phone Number</p>
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control required" placeholder="Enter Your Age">
-              <p class="text-danger d-none" id="userAgeAlert">Your age must be over 16+</p>
-            </div>
-            <div class="col-md-6">
-              <input type="password" class="form-control required" placeholder="Enter Your Password">
-              <p class="text-danger d-none" id="userPasswordAlert">Password must contain numbers & letters and be at least 8 characters</p>
-            </div>
-            <div class="col-md-6">
-              <input type="password" class="form-control required" placeholder="Re-enter Password">
-              <p class="text-danger d-none" id="userRePasswordAlert">Passwords do not match</p>
-            </div>
-          </div>
-          <button class="btn btn-outline-light mt-5 rounded-2 text-center" onclick="validateContactForm()">Submit</button>
+            <button class="btn btn-outline-light mt-5 rounded-2 text-center"
+                onclick="validateContactForm()">Submit</button>
         </div>
-      </div>
+    </div>
 
-   
+
+
 
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
-    
 
-    
+
+
 </body>
+
 </html>
