@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Movie App </title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex">
+        <div class="nav-tap d-flex flex-column justify-content-between p-4 min-vh-100">
+            <div class="nav-links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li class="py-2 position-relative"> Now playing </li>
+                    <li class="py-2 position-relative"> Popular </li>
+                    <li class="py-2 position-relative"> Top Rated </li>
+                    <li class="py-2 position-relative"> Trending </li>
+                    <li class="py-2 position-relative"> Upcoming </li>
+                    <!-- <li class="py-2 position-relative"> Contact Us </li> -->
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer-copy">
+                    <p> Copyright © 2022 All Rights <br> Reserved.  <br> Created by <span> Alaa Ahmed</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-header d-flex flex-column justify-content-between text-center bg-white text-black py-2 px-2">
+            <img class="logo" src="./img/logo.png">
+            <i class="fa-solid fa-align-justify fa-2x open-close-icon"></i>
+            <!-- <i class="fa-solid fa-x"></i> -->
+            
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row m-auto py-5">
+            <div class="col-md-12">
+                <input class="form-control bg-transparent w-50 mx-auto rounded-pill text-white shadow-none border-white px-3" type="text" placeholder="search ..">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-5 g-4" id="rowData">
+            <!-- <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute p-5">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="movie-item position-relative overflow-hidden">
+                    <img src="./img/drCySAAAvegq1vQRGRqPKN9f00w.jpg" class="w-100 animate">
+                    <div class="movie-overlay position-absolute">
+                        <h1 class="movie-title"> Meg 2: The Trench </h1>
+                        <p class="movie-desc"> An exploratory dive into the deepest depths of the ocean
+                            of a daring research team spirals into chaos when a malevolent
+                            mining operation threatens their mission and forces them into
+                            a high-stakes battle for survival. </p>
+                        <p class="movie-date"> <span> Release Date </span> <span>  : 2023-08-02 </span></p>
+                        <h3 class="">
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-solid fa-star text-warning fs-6"></i>
+                            <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
+                        </h3>
+                        <h3 class="number"> 7.0</h3>    
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="container w-75 text-center">
+            <h1> Contact Us </h1>
+            <div class="row g-4 mt-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control required " placeholder="Enter Your Name">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" placeholder="Enter Your Email">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" placeholder="Enter Your Phone">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" placeholder="Enter Your Age">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" placeholder="Enter Your Password">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control required" placeholder="reEnter Password">
+                    <span class="error"></span>
+                </div>
+                
+            </div>
+            <button class="btn btn-outline-light mt-5 rounded-2 text-center"> Submit </button>
+    </div>
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    
+
+    
+</body>
+</html>
