@@ -214,38 +214,41 @@
         </div>
     </div>
 
+
     <div class="contact min-vh-100 d-flex justify-content-center align-items-center">
         <div class="container w-75 text-center">
-            <h1> Contact Us </h1>
-            <div class="row g-4 mt-3">
-                <div class="col-md-6">
-                    <input type="text" class="form-control required " placeholder="Enter Your Name">
-                    <span class="error"></span>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control required" placeholder="Enter Your Email">
-                    <span class="error"></span>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control required" placeholder="Enter Your Phone">
-                    <span class="error"></span>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control required" placeholder="Enter Your Age">
-                    <span class="error"></span>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control required" placeholder="Enter Your Password">
-                    <span class="error"></span>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control required" placeholder="reEnter Password">
-                    <span class="error"></span>
-                </div>
-                
+          <h1>Contact Us</h1>
+          <div class="row g-4 mt-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control required" placeholder="Enter Your Name">
+              <p class="text-danger d-none" id="userNameAlert">Include at least 3 letters</p>
             </div>
-            <button class="btn btn-outline-light mt-5 rounded-2 text-center"> Submit </button>
-    </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control required" placeholder="Enter Your Email">
+              <p class="text-danger d-none" id="userEmailAlert">Invalid Email, try example@domain.com</p>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control required" placeholder="Enter Your Phone">
+              <p class="text-danger d-none" id="userPhoneAlert">Invalid Phone Number</p>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control required" placeholder="Enter Your Age">
+              <p class="text-danger d-none" id="userAgeAlert">Your age must be over 16+</p>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control required" placeholder="Enter Your Password">
+              <p class="text-danger d-none" id="userPasswordAlert">Password must contain numbers & letters and be at least 8 characters</p>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control required" placeholder="Re-enter Password">
+              <p class="text-danger d-none" id="userRePasswordAlert">Passwords do not match</p>
+            </div>
+          </div>
+          <button class="btn btn-outline-light mt-5 rounded-2 text-center" onclick="validateContactForm()">Submit</button>
+        </div>
+      </div>
+
+   
 
 
     <script src="./js/jquery-3.6.0.min.js"></script>
