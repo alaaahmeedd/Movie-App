@@ -202,4 +202,34 @@ i{
   box-sizing: border-box;
 }
 
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+}
+
+body {
+  height: 2000px; /* Adding extra height for demonstration purposes */
+}
+
 
