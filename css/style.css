@@ -232,4 +232,18 @@ body {
   height: 2000px; /* Adding extra height for demonstration purposes */
 }
 
+#inputSearch{
+  border: 2px solid #F8F6F6;
+}
+
+#inputSearch::placeholder {
+  color: #636E7D;
+  font-size: 17px;
+}
+
+.contact input::placeholder {
+  color: #636E7D;
+  font-size: 17px;
+}
+
 
