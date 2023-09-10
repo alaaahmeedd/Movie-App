@@ -2,6 +2,14 @@
 let rowData = document.getElementById('rowData');
 let arr_movies = [];
 
+$(document).ready(function(){
+  getApi().then(()=>{
+    $('.loading-screen').fadeOut(2000);
+    $('body').css('overflow','visible')
+
+  })
+})
+
 function openSideNav(){
     $('.side-nav-menu').animate({ left:0 },500);
     $('.open-close-icon').removeClass('fa-align-justify');
@@ -231,38 +239,6 @@ function validateContactForm() {
       userRePasswordAlert.classList.add('d-none');
     }
   }
-
-
-
-//   function searchCurrent(movieTitle) {
-//     let cartoona = '';
-
-//   for (let i = 0; i < arr_movies.length; i++) {
-//     if (arr_movies[i].title.includes(movieTitle) == true) {
-//         cartoona += `
-//         <div class="col-md-4">
-//                 <div class="movie-item position-relative overflow-hidden">
-//                     <img src="https://image.tmdb.org/t/p/w500/${arr_movies[i].poster_path}" class="w-100 animate">
-//                     <div class="movie-overlay position-absolute p-5 d-flex flex-column justify-content-center">
-//                         <h1 class="movie-title"> ${arr_movies[i].title} </h1>
-//                         <p class="movie-desc"> ${arr_movies[i].overview} </p>
-//                         <p class="movie-date">  <span> Release Date </span> <span>  : ${arr_movies[i].release_date} </span></p>
-//                         <h3 class="">
-//                             <i class="fa-solid fa-star text-warning fs-6"></i>
-//                             <i class="fa-solid fa-star text-warning fs-6"></i>
-//                             <i class="fa-solid fa-star text-warning fs-6"></i>
-//                             <i class="fa-regular fa-star-half-stroke text-warning fs-6"></i>
-//                         </h3>
-//                         <h3 class="number"> ${arr_movies[i].vote_average} </h3>    
-
-//                     </div>
-//                 </div>
-//             </div>
-//         `;
-//     }
-//     document.getElementById("movies_Data").innerHTML = cartoona;
-//   }
-// }
 
 
 
