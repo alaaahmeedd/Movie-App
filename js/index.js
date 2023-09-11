@@ -93,6 +93,7 @@ async function getApi(type = "popular") {
     let finalResult = await response.json();
     arr_movies = finalResult.results;
     displayMovies();
+    closeSideNav();
   }
   getApi();
   
@@ -101,28 +102,39 @@ async function getApi(type = "popular") {
 
   $("#nowPlaying").click(() => {
     getApi("now_playing");
+    closeSideNav();
   });
   
   $("#popular").click(() => {
     getApi("popular");
+    closeSideNav();
   });
   
   $("#topRated").click(() => {
     getApi("top_rated");
+    closeSideNav();
   });
   
   $("#trending").click(() => {
     getTrending();
+    closeSideNav();
+
   });
   
   $("#upcoming").click(() => {
     getApi("upcoming");
+    closeSideNav();
   });
+
+  $("#popur").click(() => {
+    closeSideNav();
+});
+
+
 
 
 // ---------------------- search ---------------------
 
-/* ------------------ search bars ----------------- */
 
 let searchMovies = document.querySelector("#inputSearch");
 let searchCurrentList = document.querySelector("#currentSearch");

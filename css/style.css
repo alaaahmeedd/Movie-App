@@ -41,10 +41,15 @@ i{
   
 } */
 
-
+.movie-item{
+   width: 95%;
+   margin: auto;
+}
 
 .movie-item img{
-    transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+   width: 100%;
+
 }
 
 .movie-item:hover .animate
